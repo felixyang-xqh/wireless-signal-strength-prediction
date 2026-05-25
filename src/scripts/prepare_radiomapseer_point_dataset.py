@@ -87,7 +87,7 @@ def normalized_features(tx_x: int, tx_y: int, rx_x: int, rx_y: int, size: int = 
 
 
 def receiver_distance(tx_x: int, tx_y: int, rx_x: int, rx_y: int) -> float:
-    return math.sqrt((tx_x - rx_x) ** 2 + (tx_y - ry_y) ** 2)
+    return math.sqrt((tx_x - rx_x) ** 2 + (tx_y - rx_y) ** 2)
 
 
 def line_pixels(x0: int, y0: int, x1: int, y1: int) -> List[Tuple[int, int]]:
